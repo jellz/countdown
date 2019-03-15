@@ -36,7 +36,7 @@ class NewCountdown extends Component {
       },
       body: JSON.stringify({
         name: this.state.eventName.trim(),
-        expires: new Date(this.state.eventDate).getTime()
+        expires: time
       })
     });
     let json = await res.json();
