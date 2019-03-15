@@ -9,6 +9,6 @@ app.use(require('morgan')('dev'));
 app.use(express.json());
 app.use(cors());
 
-app.use('/api/countdowns', require('./routes/countdown'));
+app.use('/api/countdowns', require('./routes/countdowns'));
 
 app.listen(PORT, () => console.log('itsalmost-clone listening on ' + PORT));

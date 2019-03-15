@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
     expires: req.body.expires
   }).run();
   let id = insert.generated_keys[0];
-  await r.table('countdowns').get(id).update({ slug: slug += id.split('-')[0]  });
+  await r.table('countdowns').get(id).update({ slug: slug + '-' + id.split('-')[0]  });
   let countdown = await r.table('countdowns').get(id);
   res.status(201).json({
     ok: true,
