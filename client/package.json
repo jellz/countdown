@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "humanize-duration": "^3.18.0",
     "moment": "^2.24.0",
     "react": "^16.8.2",
     "react-datetime-picker": "^2.2.1",

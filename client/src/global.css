@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
 * { font-family: 'Nunito', sans-serif; }
-.new-countdown-container { text-align: center; padding-top: 5%; }
+.container { text-align: center; padding-top: 5%; }
 .event-name-input, .event-time-input {
   border-left: none;
   border-top: none;
@@ -39,4 +39,15 @@ h2 { user-select: none; }
 }
 .submit-button:active {
   opacity: 0.75;
+}
+.countdown-name { font-weight: bold; }
+.countdown-header { font-weight: normal; }
+.countdown-error { color: red; }
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 2%;
 }

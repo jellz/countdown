@@ -22,7 +22,8 @@ router.post('/', async (req, res) => {
 });
 
 router.get('/:slug', async (req, res) => {
-  let countdown = await r.table('countdowns').filter({ slug: req.params.slug }).run()
+  let countdown = await r.table('countdowns').filter({ slug: req.params.slug }).run();
+  countdown = countdown[0];
   if (!countdown) res.status(404).json({ ok: false, error: 'Unknown countdown' });
   res.json({ ok: true, countdown });
 });

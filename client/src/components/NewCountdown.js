@@ -40,13 +40,13 @@ class NewCountdown extends Component {
       })
     });
     let json = await res.json();
-    if (!json.ok) throw 'Error creating countdown';
+    if (!json.ok) throw 'Error creating countdown, check Network tab';
     window.location.href = `/${json.countdown.slug}`;
   }
 
   render() {
     return (
-      <div className='new-countdown-container'>
+      <div className='container'>
         <div>
           <form onSubmit={this.handleSubmit}>
             <label htmlFor='event-name-input' className='input-label'>It's almost </label>
