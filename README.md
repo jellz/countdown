@@ -1,2 +1,2 @@
-# itsalmost-clone
-It's almost...
+# Countdown
+Effortlessly create countdowns to share
