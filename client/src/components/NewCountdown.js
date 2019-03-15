@@ -48,7 +48,7 @@ class NewCountdown extends Component {
     return (
       <div className='container'>
         <div>
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} novalidate>
             <label htmlFor='event-name-input' className='input-label'>It's almost </label>
             <input id='event-name' className='event-name-input' maxLength={100} value={this.state.eventName} onChange={this.handleNameChange} />
             <br />
