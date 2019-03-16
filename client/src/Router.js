@@ -16,7 +16,7 @@ class Router extends Component {
             <div className='footer'>
               <a href='/'>new countdown</a>
               <br />
-              site made by <a href='https://github.com/jellz'>Daniel Gulic</a>
+              site made by <a href='https://danielgulic.com'>Daniel Gulic</a>
             </div>
           </div>
         </div>
